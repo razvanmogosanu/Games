@@ -1,0 +1,88 @@
+html, body {
+    background-color: #FFFFFF;
+}
+
+#grid {
+    border-radius: 10px;
+    border-collapse: separate;
+    border: 10px solid saddlebrown;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 2px solid darkolivegreen;
+    height: 80px;
+    width: 80px;
+}
+
+.cell {
+    line-height: 80px;
+    color: darkolivegreen;
+    padding: 0;
+    border: 0;
+    width: 80px;
+    height: 80px;
+    background-color: greenyellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cell.unmodifiable {
+    background-color: gold;
+}
+
+.cell.selected {
+    background: lime;
+}
+
+.cell.selected.unmodifiable {
+    background: maroon;
+}
+
+.cell.wrong {
+    background: red;
+}
+
+td:nth-child(3n + 0) {
+    border-right: 5px solid darkolivegreen;
+}
+
+td:nth-child(3n - 2) {
+    border-left: 5px solid darkolivegreen;
+}
+
+tr:nth-child(3n) > td {
+    border-bottom: 5px solid darkolivegreen;
+}
+
+tr:nth-child(3n - 2) > td {
+    border-top: 5px solid darkolivegreen;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
